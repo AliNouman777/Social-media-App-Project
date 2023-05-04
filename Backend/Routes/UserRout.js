@@ -22,7 +22,7 @@ router.get("/myfollower" ,isAuth,Myfollower)
 
 router.get("/myfollowing" ,isAuth,Myfollowing)
 
-router.get("/all", isAuth,AllProfiles)
+router.get("/all",AllProfiles)
 
 router.put("/changeprofile", Changeprofile)
 
