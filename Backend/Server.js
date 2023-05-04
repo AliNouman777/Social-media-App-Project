@@ -20,7 +20,7 @@ app.use(cors({
     origin: [process.env.ALLOWED_ORIGIN],
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
-    allowedHeaders: ["Content-Type", "Authorization"]
+    allowedHeaders: ["Content-Type"]
   }));
 
   cloudinary.config({
