@@ -301,7 +301,12 @@ export const ChangePassword = async (req, res) => {
 export const Changeprofile = async (req, res) => {
   try {
     const { name, email } = req.body;
+    
     const user = await User.findById(req.user);
+
+    if(!user){
+     return res.status(404).json({message:"user not found"})
+    }
 
     if (!name || !email) {
       return res.status(400).json({
@@ -309,7 +314,7 @@ export const Changeprofile = async (req, res) => {
         message: "field must not empty",
       });
     }
-
+    
     user.name = name;
     user.email = email;
 
@@ -322,6 +327,7 @@ export const Changeprofile = async (req, res) => {
   } catch (error) {
     res.status(500).json({
       success: false,
+      error:console.log(error),
       message: error.message,
     });
   }

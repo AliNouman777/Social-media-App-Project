@@ -24,7 +24,7 @@ router.get("/myfollowing" ,isAuth,Myfollowing)
 
 router.get("/all", isAuth,AllProfiles)
 
-router.put("/changeprofile", Changeprofile)
+router.put("/changeprofile",isAuth ,Changeprofile)
 
 router.put("/changepassword", isAuth, ChangePassword)
 
