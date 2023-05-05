@@ -14,7 +14,7 @@ export const Register = async (req, res) => {
         message: "Must not be empty",
       });
     }
-
+console.log("ok")
     const user = await User.findOne({ email });
     if (user) {
       return res.status(400).json({
@@ -22,6 +22,8 @@ export const Register = async (req, res) => {
         message: "already exists",
       });
     }
+
+    console.log("this is also ok")
 
     const mycloud= await cloudinary.v2.uploader.upload(avatar,{
       folder:"avatars",
@@ -48,8 +50,10 @@ export const Register = async (req, res) => {
       password,
     });
 
-    newuser = await newuser.save();
+    console.log("okay")
 
+    newuser = await newuser.save();
+console.log("user saved")
     const token = jwt.sign({ id: newuser._id }, process.env.JWT_SECRET);
 
     res
