@@ -17,7 +17,7 @@ ConnectDb();
 dotenv.config({path:"./Backend/.env"});
 
 app.use(cors({
-    origin: ["http://localhost:5173/"],
+    origin: ["http://localhost:5173"],
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
     allowedHeaders: ["Content-Type"]
