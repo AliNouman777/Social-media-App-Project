@@ -24,9 +24,9 @@ app.use(cors({
   }));
 
   cloudinary.config({
-    cloud_name:process.env.CLOUD_NAME,
-    api_key:process.env.CLOUD_API_KEY,
-    api_secret:process.env.CLOUD_API_SECRET,
+    cloud_name:"dkign4q9c",
+    api_key:"926982978976591",
+    api_secret:"ShLiB78974WUlxf8yFzNwYWkzVg",
 })
 
   
