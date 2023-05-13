@@ -20,8 +20,7 @@ app.use(
       "http://localhost:5173",
       "https://frontend-social-jdfm0q2dk-nomib508-gmailcom.vercel.app",
       "https://frontend-social-7euza6wf1-nomib508-gmailcom.vercel.app",
-      "https://frontend-social-jdfm0q2dk-nomib508-gmailcom.vercel.app/login",
-      "https://frontend-social-7euza6wf1-nomib508-gmailcom.vercel.app/login",
+      "https://frontend-social-qmmn0jhtl-nomib508-gmailcom.vercel.app"
     ],
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
