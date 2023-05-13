@@ -19,7 +19,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "https://frontend-social-jdfm0q2dk-nomib508-gmailcom.vercel.app",
-      "frontend-social-7euza6wf1-nomib508-gmailcom.vercel.app",
+      "https://frontend-social-7euza6wf1-nomib508-gmailcom.vercel.app/",
     ],
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
