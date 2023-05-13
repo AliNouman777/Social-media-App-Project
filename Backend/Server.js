@@ -17,7 +17,7 @@ ConnectDb();
 dotenv.config({path:"./Backend/.env"});
 
 app.use(cors({
-    origin: ["http://localhost:5173" ,"https://frontend-social-app.vercel.app","https://frontend-social-jdfm0q2dk-nomib508-gmailcom.vercel.app"],
+    origin: ["http://localhost:5173" ,"https://frontend-social-jdfm0q2dk-nomib508-gmailcom.vercel.app"],
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
     allowedHeaders: ["Content-Type"]
