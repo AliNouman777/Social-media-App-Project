@@ -18,7 +18,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://frontend-social-kyly60evn-nomib508-gmailcom.vercel.app",
+      "https://frontend-social-9o9mj6ycb-nomib508-gmailcom.vercel.app",
     ],
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
